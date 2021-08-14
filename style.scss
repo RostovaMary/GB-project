@@ -11,7 +11,7 @@ $pink-element: #f16d7f;
 }
 .pink__text {
     color: $pink-element;
-}
+} /*стили главной страницы*/
 .header {
     height: 75px;
     background-color: #222222;
@@ -88,6 +88,7 @@ $pink-element: #f16d7f;
                     left: 15px;
                     display: none;
                     flex-direction: column;
+                    z-index: 5;
                     .menu__title {
                         font-family: Lato;
                         font-weight: bold;
@@ -134,7 +135,6 @@ $pink-element: #f16d7f;
         }
     }
 }
-
 .banner {
     height: 764px;
     background-color: #f1e4e6;
@@ -577,7 +577,7 @@ $pink-element: #f16d7f;
             }
         }
     }
-}
+} /*cтили страницы продукта*/
 .product__header {
     background-color: #f8f3f4;
 }
@@ -616,12 +616,22 @@ $pink-element: #f16d7f;
     text-decoration: none;
     color: #636363;
 }
-
-.carousel-control-next-icon {
-    background-color: #2a2a2a;
-    color: $pink-element;
+/*стили каталога*/
+.pagination {
+    justify-content: center;
 }
-.carousel-control-prev-icon {
-    background-color: #2a2a2a;
+.page-item {
+    margin-top: 48px;
+    margin-bottom: 96px;
+}
+.page-link {
+    text-decoration: none;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ebebeb;
+}
+.page-link:hover {
     color: $pink-element;
 }
